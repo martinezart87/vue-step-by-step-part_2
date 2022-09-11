@@ -18,3 +18,13 @@ Things You'll Learn
 
 Command:
 npm init vue@latest
+
+### Episode 17 Little Confusing Things
+
+At this stage, I fully expect you to be confused in numerous ways. We went from building basic Vue components to scaffolding a full single-page application with routing, configuration, aliases, and more. In this lesson, let's review a handful of small things that I think you might initially find to be confusing.
+
+Things You'll Learn
+- Aliases
+- RouterView
+- Pascal Case for Components
+- Single Use Components
