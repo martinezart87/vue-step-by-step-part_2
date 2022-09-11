@@ -1,17 +1,35 @@
-# Vue 3: Step by Step Part 2
+# vue-project
 
-Laracasts tutorial: https://laracasts.com/series/learn-vue-3-step-by-step
+This template should help get you started developing with Vue 3 in Vite.
 
-Server run: npx serve
+## Recommended IDE Setup
 
-Resources server run: npx json-server db.json -p 3001
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-## Section 5 Vite
-### Episode 16 Vite
+## Customize configuration
 
-Great job, if you've made it this far. I think you're now ready to move on to part two of this series. Now that you understand many of the fundamentals of Vue, let's now figure out how to actually construct a single-page application using it. To demonstrate this, we'll pull in a first-party tool called Vite.
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-Things You'll Learn
-- Vite
-- Hot Reloading
-- Vue Router
+## Project Setup
+
+```sh
+npm install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
+```
+
+### Compile and Minify for Production
+
+```sh
+npm run build
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```
