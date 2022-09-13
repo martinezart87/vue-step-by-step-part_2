@@ -7,14 +7,11 @@ Server run: npx serve
 Resources server run: npx json-server db.json -p 3001
 
 ## Section 6 The Composition API
-### Episode 20 Composable Example: Local Storage
+### Episode 21 Refactor to defineProps and defineEmits
 
-Let's review another example of a composable. This time, we'll leverage localStorage and Vue reactivity to "remember" a form input's value - even if you refresh the page.
+Let's review a couple other Composition API gotchas in this episode. Using the example of an enhanced "tabbable" textarea, we'll learn how to use defineProps and defineEmits when using script setup.
 
 Things You'll Learn
-- Composables
-- localStorage
-- Vue watchers
-
-Debug:
-Application -> local storage
+- v-model for Custom Components
+- defineProps
+- defineEmits

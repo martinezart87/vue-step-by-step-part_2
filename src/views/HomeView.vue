@@ -1,55 +1,60 @@
-<!--  Dane przechowywane w localStorage nie mają czasu wygaśnięcia, natomiast dane przechowywane w sessionStorage są usuwane po zakończeniu sesji przeglądania (tzn. po zamknięciu przeglądarki -->
 <script setup>
-  import { useStorage } from "@/composables/useStorage";
+import TabbableTextarea from "@/components/TabbableTextarea.vue";
+import { ref } from "vue";
 
-  // po refreshu strony wartości będą zapisane w local storage
-  let food = useStorage('food');
-  let age = useStorage('age');
+// zmienna v-model
+let comment = ref('test value');
 
-  let obj = useStorage('obj', { one: 'one' });
-
-  setTimeout(() => {
-    obj.value.one = 'CHANGED';
-    // jak nie ma parametru deep: true w funkcji watch
-    // obj.value = 'CHANGED';
-
-  }, 2000);
+setTimeout(() => {
+  comment.value = "It works";
+}, 2000);
 </script>
 
-<!-- <script setup> 
-  import { ref, watch } from "vue";
+<!-- <script setup>
 
-  // pobranie wartości z local storage i przypisanie do zmiennej, po refreshu wartość zostanie w inpucie
-  let food = ref(localStorage.getItem('food'));
-  let age = ref(localStorage.getItem('age'));
+import { onMounted, ref } from "vue";
+let textarea = ref(null);
 
-  // obserwator food
-  watch(food, (val) => {
-    write('food', val);
-  });
+onMounted(() => {
+  textarea.value.addEventListener("keydown", (e) => {
+    let t = textarea.value;
+    
+    if(e.keyCode === 9){
+      let val = t.value,
+        start = t.selectionStart,
+        end = t.selectionEnd;
 
-  // po refreshu strony warość zostaje w local storage
-  function write(key, val) {
-    localStorage.setItem(key,val);
-  }
+      t.value = val.substring(0, start) + "\t" + val.substring(end);
 
-  setTimeout(() => {
-    food.value = 'changed';
-  }, 2000);
+      t.selectionStart = t.selectionEnd = start + 1;
+
+      e.preventDefault();
+    }    
+  })
+})
+
+// onMounted(() => {
+//   console.log(textarea.value.value);
+// });
+
 </script> -->
 
 <template>
   <main>
-    <p>
-      What is your favourite food?
-      <input type="text" v-model="food">
-      <!-- <input type="text" v-model="food" @input="write('food', food)"> -->
-    </p>
+    <form action="">
+      <TabbableTextarea v-model="comment" style="width: 100%; height: 300px"></TabbableTextarea>
+      <!-- listen keydown.tab -->
+      
 
-    <p>
-      How old are you??
-      <input type="text" v-model="age">
-      <!-- <input type="text" v-model="age" @input="write('age', age)"> -->
-    </p>
+      <!-- <textarea
+        ref="textarea"
+        @keydown.tab.prevent="onTabPress"
+        style="width: 100%; height: 300px"
+      >
+Hi there
+        </textarea
+      > -->
+
+    </form>
   </main>
 </template>
