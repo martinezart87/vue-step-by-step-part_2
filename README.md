@@ -6,12 +6,6 @@ Server run: npx serve
 
 Resources server run: npx json-server db.json -p 3001
 
-## Section 7 Managing State
-
-No code in video
-Another code: 
-- Episode 22 - ??????
-- Episode 23 - https://gist.github.com/JeffreyWay/bc55dfcfb206f6fb0053bd5e7dc705ea
-- Episode 24 - https://gist.github.com/JeffreyWay/bc89098d51db1fa632cb45ed8c54d685
-- Episode 25 - https://gist.github.com/JeffreyWay/4e9ae3e183f85176ace959a7c31badb6
-    npm install pinia
+## Section 8 Team Dashboard Exercise
+Episode 26 - Code Organization - https://gist.github.com/JeffreyWay/277609735106816f2e6b7d07f2db92be
+Episode 27 - Bulid and Seed a Team Store - https://gist.github.com/JeffreyWay/9ca33e4213c9e7c66cf3319eecc7b8a6
