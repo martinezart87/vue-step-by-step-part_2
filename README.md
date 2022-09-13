@@ -7,11 +7,14 @@ Server run: npx serve
 Resources server run: npx json-server db.json -p 3001
 
 ## Section 6 The Composition API
-### Episode 18 Two Mental Leaps to Script Setup
+### Episode 19 From Mixins to Composables
 
-I must admit, I feel bad for what I'm about to do. You were becoming so comfortable, and I had to suddenly throw a wrench into the gears. In this lesson, let's mentally adjust to working with the Composition API and script setup.
+Let's talk about code re-use in this episode. We'll begin by reviewing a basic example using a traditional, mixin-based approach. And then, we'll convert it to the more recommended approach these days: composables.
 
 Things You'll Learn
-- Composition API
-- Script setup
-- Reactivity
+- Code Re-use
+- Mixins
+- Composables
+
+Command:
+npm install sweetalert --save-dev
