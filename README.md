@@ -7,14 +7,14 @@ Server run: npx serve
 Resources server run: npx json-server db.json -p 3001
 
 ## Section 6 The Composition API
-### Episode 19 From Mixins to Composables
+### Episode 20 Composable Example: Local Storage
 
-Let's talk about code re-use in this episode. We'll begin by reviewing a basic example using a traditional, mixin-based approach. And then, we'll convert it to the more recommended approach these days: composables.
+Let's review another example of a composable. This time, we'll leverage localStorage and Vue reactivity to "remember" a form input's value - even if you refresh the page.
 
 Things You'll Learn
-- Code Re-use
-- Mixins
 - Composables
+- localStorage
+- Vue watchers
 
-Command:
-npm install sweetalert --save-dev
+Debug:
+Application -> local storage
