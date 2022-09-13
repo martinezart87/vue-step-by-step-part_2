@@ -1,3 +1,4 @@
+<!--  Dane przechowywane w localStorage nie mają czasu wygaśnięcia, natomiast dane przechowywane w sessionStorage są usuwane po zakończeniu sesji przeglądania (tzn. po zamknięciu przeglądarki -->
 <script setup>
   import { useStorage } from "@/composables/useStorage";
 
