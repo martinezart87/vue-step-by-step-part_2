@@ -6,12 +6,12 @@ Server run: npx serve
 
 Resources server run: npx json-server db.json -p 3001
 
-## Section 6 The Composition API
-### Episode 21 Refactor to defineProps and defineEmits
+## Section 7 Managing State
 
-Let's review a couple other Composition API gotchas in this episode. Using the example of an enhanced "tabbable" textarea, we'll learn how to use defineProps and defineEmits when using script setup.
-
-Things You'll Learn
-- v-model for Custom Components
-- defineProps
-- defineEmits
+No code in video
+Another code: 
+- Episode 22 - ??????
+- Episode 23 - https://gist.github.com/JeffreyWay/bc55dfcfb206f6fb0053bd5e7dc705ea
+- Episode 24 - https://gist.github.com/JeffreyWay/bc89098d51db1fa632cb45ed8c54d685
+- Episode 25 - https://gist.github.com/JeffreyWay/4e9ae3e183f85176ace959a7c31badb6
+    npm install pinia
