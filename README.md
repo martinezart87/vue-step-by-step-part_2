@@ -6,13 +6,12 @@ Server run: npx serve
 
 Resources server run: npx json-server db.json -p 3001
 
-## Section 5 Vite
-### Episode 17 Little Confusing Things
+## Section 6 The Composition API
+### Episode 18 Two Mental Leaps to Script Setup
 
-At this stage, I fully expect you to be confused in numerous ways. We went from building basic Vue components to scaffolding a full single-page application with routing, configuration, aliases, and more. In this lesson, let's review a handful of small things that I think you might initially find to be confusing.
+I must admit, I feel bad for what I'm about to do. You were becoming so comfortable, and I had to suddenly throw a wrench into the gears. In this lesson, let's mentally adjust to working with the Composition API and script setup.
 
 Things You'll Learn
-- Aliases
-- RouterView
-- Pascal Case for Components
-- Single Use Components
+- Composition API
+- Script setup
+- Reactivity
