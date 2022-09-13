@@ -17,6 +17,7 @@ import HelloWorld from "./components/HelloWorld.vue";
       <HelloWorld msg="You did it!" />
 
       <nav>
+        <!-- Router link nie robi refresha (ajax), a zadziała ale z refreshem -->
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
@@ -24,6 +25,7 @@ import HelloWorld from "./components/HelloWorld.vue";
     </div>
   </header>
 
+  <!-- Content na podstawie router/index.js -->
   <RouterView />
 </template>
 

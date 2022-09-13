@@ -5,6 +5,8 @@ import ToolingIcon from "./icons/IconTooling.vue";
 import EcosystemIcon from "./icons/IconEcosystem.vue";
 import CommunityIcon from "./icons/IconCommunity.vue";
 import SupportIcon from "./icons/IconSupport.vue";
+
+import { RouterLink } from "vue-router";
 </script>
 
 <template>
@@ -19,6 +21,8 @@ import SupportIcon from "./icons/IconSupport.vue";
       >official documentation</a
     >
     provides you with all information you need to get started.
+    About: <RouterLink to="/about">About</RouterLink>
+
   </WelcomeItem>
 
   <WelcomeItem>
@@ -49,7 +53,6 @@ import SupportIcon from "./icons/IconSupport.vue";
     <a href="https://on.cypress.io/component" target="_blank"
       >Cypress Component Testing</a
     >.
-
     <br />
 
     More instructions are available in <code>README.md</code>.
